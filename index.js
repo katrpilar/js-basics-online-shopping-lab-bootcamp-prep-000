@@ -75,7 +75,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber === null){
+  if (cardNumber === NaN){
     console.log("Sorry, we don't have a credit card on file for you.");
   } else {
     const cartTotal = total();
